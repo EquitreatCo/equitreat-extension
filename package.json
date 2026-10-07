@@ -1,0 +1,47 @@
+{
+  "name": "equitreat-extension",
+  "version": "0.6.0",
+  "private": true,
+  "description": "Chrome extension that records confirmed orders at supported stores so shoppers can claim cashback paid in tokenized stock",
+  "homepage": "https://www.equitreat.org",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/EquitreatCo/equitreat-extension.git"
+  },
+  "type": "module",
+  "packageManager": "pnpm@9.15.0",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit",
+    "lint": "tsc --noEmit",
+    "test:e2e": "node --test e2e/*.e2e.mjs"
+  },
+  "dependencies": {
+    "@fontsource-variable/fredoka": "5.3.0",
+    "@fontsource-variable/outfit": "5.3.0",
+    "@fontsource-variable/plus-jakarta-sans": "5.3.0",
+    "@supabase/supabase-js": "^2.116.0",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "zod": "^4.5.4"
+  },
+  "devDependencies": {
+    "@crxjs/vite-plugin": "^2.7.1",
+    "@types/chrome": "^0.2.9",
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.7",
+    "@vitejs/plugin-react": "^6.1.1",
+    "happy-dom": "^20.14.0",
+    "playwright": "^1.63.0",
+    "typescript": "^5.9.3",
+    "viem": "^2.56.3",
+    "vite": "^8.2.2",
+    "vitest": "^5.0.0"
+  }
+}

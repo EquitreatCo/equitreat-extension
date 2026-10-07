@@ -1,0 +1,9 @@
+import { defineConfig } from 'vitest/config';
+
+export default defineConfig({
+  test: {
+    environment: 'happy-dom',
+    include: ['test/**/*.test.ts'],
+    coverage: { provider: 'v8', include: ['src/detect/**', 'src/lib/hash.ts', 'src/background/**'], thresholds: { lines: 80 } },
+  },
+});

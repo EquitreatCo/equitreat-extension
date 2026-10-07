@@ -1,0 +1,27 @@
+# dependencies and build output
+node_modules/
+dist/
+.next/
+coverage/
+*.tsbuildinfo
+*.log
+
+# local environment and keys: never commit these
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials.json
+
+# release artifacts
+releases/
+
+# tooling and OS files
+.DS_Store
+.vercel/
+.claude/
+.claude-flow/
+.superpowers/
+supabase/.temp/
+supabase/.branches/

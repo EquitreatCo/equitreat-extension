@@ -1,0 +1,79 @@
+/* equitreat design tokens (DESIGN.md v4.0, white + amber). The popup is light only:
+   a white page, warm grey panels, near-black type, and amber only where the brand should be felt. */
+:root {
+  color-scheme: light;
+
+  /* brand */
+  --amber: #F59E0B;
+  --bronze: #B45309;
+  --amber-lt: #FCD34D;
+  --tint: #FEF3C7;
+
+  /* neutrals */
+  --ink: #17150F;
+  --ink-2: #3A352B;
+  --mut: #6B6660;
+  --line: #EAE6DF;
+  --wash: #F7F6F3;
+  --paper: #FFFFFF;
+
+  /* status */
+  --alert: #D8402F;
+  --alert-soft: #FBE9E5;
+  --ok: #B45309;
+  --ok-soft: #FEF3C7;
+
+  /* translucent paper for boxes that sit on an ink ground */
+  --paper-veil: rgba(255, 255, 255, 0.12);
+
+  /* radii */
+  --r-card: 26px;
+  --r-box: 22px;
+  --r-inner: 16px;
+  --r-input: 14px;
+  --r-tile: 12px;
+  --r-pill: 999px;
+
+  /* rhythm */
+  --pad-page: 16px;
+  --gap-card: 12px;
+  --pad-card: 16px;
+
+  /* the ONLY shadow */
+  --shadow: 0 22px 60px rgba(23, 21, 15, 0.14);
+
+  /* motion */
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --t-hover: 180ms;
+  --t-open: 240ms;
+
+  /* type */
+  --font-display: 'Plus Jakarta Sans Variable', system-ui, sans-serif;
+  --font-body: 'Outfit Variable', system-ui, sans-serif;
+  --font-label: 'Outfit Variable', system-ui, sans-serif;
+  --font-wordmark: 'Fredoka Variable', system-ui, sans-serif;
+  --mono: ui-monospace, Menlo, monospace;
+
+  /* legacy aliases so nothing silently breaks */
+  --accent: var(--amber);
+  --accent-strong: var(--bronze);
+  --accent-soft: var(--tint);
+  --on-accent: var(--ink);
+  --bg: var(--paper);
+  --surface: var(--paper);
+  --surface-2: var(--wash);
+  --ink-3: var(--mut);
+  --danger: var(--alert);
+  --danger-soft: var(--alert-soft);
+  --line-strong: var(--line);
+  --ring: rgba(180, 83, 9, 0.45);
+  --font: var(--font-body);
+  --ease-out: var(--ease);
+  --ease-out-quart: var(--ease);
+  --t-fast: var(--t-hover);
+  --t-base: var(--t-hover);
+  --t-slow: var(--t-open);
+  --r-sm: var(--r-input);
+  --r-md: var(--r-input);
+  --r-lg: var(--r-box);
+}
